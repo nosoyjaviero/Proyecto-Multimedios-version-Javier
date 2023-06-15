@@ -8,7 +8,7 @@ function App() {
     <div className="App">
         <div className='navar'>
         </div>
-        <main className='main'>
+        <main className='Carousel'>
         </main>
     </div>
   );
