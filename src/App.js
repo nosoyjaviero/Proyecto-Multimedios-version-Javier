@@ -11,17 +11,18 @@ import ControlledCarousel from './Carousel/Carousel';
 // bootstrap
 // import { Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
+import Button from 'react-bootstrap/Button';
 
 function App() {
   return (
-    <div className="App" style={{ backgroundImage: `url(${background})` }}>
+    <div className="App">
         <div className='navar'>
         </div>
 
         
         <main className='Carousel'>
          <div className='carousel-content contenedor'>
-          <ControlledCarousel></ControlledCarousel>         
+          <ControlledCarousel></ControlledCarousel>  
          </div>
         </main>
     </div>
