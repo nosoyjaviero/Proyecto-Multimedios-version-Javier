@@ -17,15 +17,12 @@
 }
 .custom-row {
   background-color: #000000;
-  color: rgb(255, 255, 255);
   height: 100%;
   align-items: center;
-  border: aqua solid;
   padding: 0px;
 }
 .custom-col {
   align-items: center;
-  border: aqua solid;
   background-color: #000000;
   color: #ffffff;
   height: 100%;
@@ -37,6 +34,7 @@
   padding-top: 22px;
   padding-left: 50px;
 }
+
 .letras {
   background-color: #000000;
   height: 100%;
@@ -44,9 +42,7 @@
   text-align: center;
   padding-top: 20px;
 }
-#icons {
-  border: #ffffff solid;
-}
+
 button {
   background-color: #000000;
   border: none;
@@ -78,6 +74,8 @@ button {
 }
 .signIn{
   display: flex;
+  padding-top: 22px;
+  padding-left: 50px;
 }
 .imagen{
   height: 80px;
@@ -89,6 +87,6 @@ button {
   align-content: center;
   justify-items: center;
 }
-h5{
+p{
   color: #ffffff;
 }
