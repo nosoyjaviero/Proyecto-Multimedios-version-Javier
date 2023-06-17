@@ -1,11 +1,31 @@
 .App {
   text-align: center;
 }
+a {
+  text-decoration: none;
+}
+
 
 .navar {}
 
 .main {}
 
+
+
+.aviso{
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+  /* background-color: #0a0b0b; */
+  background-color: #26292c;
+  padding-top: 30px;
+}
+
+.aviso h6{
+  color: white;
+  text-align: center;
+}
 
 .carousel-content img {
   max-height: 685px;
@@ -18,9 +38,12 @@
     max-width: 1600px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: ;
   }
 
 }
+
+
 
 .carusel-cuadro {
   height: 30px;
@@ -30,9 +53,6 @@
   text-align: center;
   /* Para que deje el texto dentro de la tabla hacia la izquierda */
 
-}
-.carusel-cuadro h5 {
-color: orangered;
 }
 
 

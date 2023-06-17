@@ -23,9 +23,18 @@ function App() {
         
         <main className='Carousel'>
          <div className='carousel-content contenedor'>
-         
-          <ControlledCarousel></ControlledCarousel>  
-          
+         <div className='aviso'> 
+
+         {/* 0a0b0b */}
+         <a href='#' > <h6>ALL OF YOUR STAR WARS FAVORITES NOW STREAMING ON DISNEY*</h6></a>
+
+
+         </div>
+
+         <div> 
+         <ControlledCarousel></ControlledCarousel>  
+         </div>
+
          </div>
         </main>
     </div>
