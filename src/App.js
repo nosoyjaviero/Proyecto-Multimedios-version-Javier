@@ -7,6 +7,7 @@ import background from "./media/background.jpeg";
 
 // archivos
 import ControlledCarousel from './Carousel/Carousel';
+import ProgressB from './Carousel/progress';
 
 // bootstrap
 // import { Button } from 'react-bootstrap';
@@ -23,6 +24,7 @@ function App() {
         <main className='Carousel'>
          <div className='carousel-content contenedor'>
           <ControlledCarousel></ControlledCarousel>  
+          
          </div>
         </main>
     </div>
