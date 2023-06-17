@@ -1,0 +1,94 @@
+.navar {
+  width: 100%;
+  height: 200px;
+  border: black solid;
+  background-color: black;
+}
+.iconos {
+  width: 100%;
+  height: 70%;
+  background-color: black;
+}
+
+.custom-container {
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  color: #333;
+}
+.custom-row {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  height: 100%;
+  align-items: center;
+  border: aqua solid;
+  padding: 0px;
+}
+.custom-col {
+  align-items: center;
+  border: aqua solid;
+  background-color: #000000;
+  color: #ffffff;
+  height: 100%;
+}
+.prueba {
+  background-color: #000000;
+  height: 100%;
+  height: 100%;
+  padding-top: 22px;
+  padding-left: 50px;
+}
+.letras {
+  background-color: #000000;
+  height: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+#icons {
+  border: #ffffff solid;
+}
+button {
+  background-color: #000000;
+  border: none;
+}
+.icon-tabler {
+  color: red;
+  width: 32px;
+  height: 32px;
+  stroke-width: 1;
+}
+#lupa{
+  width: 28px;
+  height: 28px;
+  stroke-width: 1.5;
+}
+#people{
+  width: 28px;
+  height: 28px;
+  stroke-width: 1.5;
+}
+#kids {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-family: copperplate, Fantasy, monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.signIn{
+  display: flex;
+}
+.imagen{
+  height: 80px;
+  width: 185px;
+}
+.buscador{
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-items: center;
+}
+h5{
+  color: #ffffff;
+}
