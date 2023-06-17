@@ -23,6 +23,7 @@ function App() {
         
         <main className='Carousel'>
          <div className='carousel-content contenedor'>
+         
           <ControlledCarousel></ControlledCarousel>  
           
          </div>
