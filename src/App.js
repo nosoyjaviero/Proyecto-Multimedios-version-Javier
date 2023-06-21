@@ -23,9 +23,7 @@ function App() {
         
         <main className='Carousel'>
          <div className='carousel-content contenedor'>
-         <div className='aviso'> 
-
-         {/* 0a0b0b */}
+         <div className='aviso center'> 
          <a href='#' > <h6>ALL OF YOUR STAR WARS FAVORITES NOW STREAMING ON DISNEY*</h6></a>
 
 
