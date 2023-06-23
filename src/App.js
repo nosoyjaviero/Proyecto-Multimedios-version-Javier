@@ -8,6 +8,7 @@ import background from "./media/background.jpeg";
 
 // archivos
 import ControlledCarousel from './Carousel/Carousel';
+import ProgressB from './Carousel/progress';
 
 // bootstrap
 // import { Button } from 'react-bootstrap';
@@ -25,8 +26,17 @@ function App() {
       </div>
       <main className='Carousel'>
         <div className='carousel-content contenedor'>
-          <ControlledCarousel></ControlledCarousel>
+         <div className='aviso center'> 
+         <a href='#' > <h6>ALL OF YOUR STAR WARS FAVORITES NOW STREAMING ON DISNEY*</h6></a>
+
+
+         </div>
+
+         <div> 
+         <ControlledCarousel></ControlledCarousel>
         </div>
+
+         </div>
       </main>
 
     </div>

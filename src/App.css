@@ -7,32 +7,58 @@
   text-align: center;
 }
 
+.navar {}
+
+.main {}
+
+
 .carousel-content img {
-  max-height: 700px;
+  max-height: 685px;
 }
 
 @media (min-width: 768px) {
   .contenedor {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1700px;
+    max-width: 1600px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 10px;
   }
-
 }
 
 .carusel-cuadro {
-  height: 80px;
-  width: 142px;
-  border: 1px solid white;
+  height: 30px;
+  width: 30px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  /* Para que deje el texto dentro de la tabla hacia la izquierda */
-
 }
-.carusel-cuadro h5 {
-color: orangered;
+
+.carousel-indicators [data-bs-target] {
+  position: relative;
+  width: 60px;
+  height: 6px;
+  border: none;
+  border-radius: 24px;
+}
+.carousel-indicators [data-bs-target] span {
+  content: ’’;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #7952b3;
+  border-radius: inherit;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item {
+  opacity: 0;
 }
 
