@@ -6,11 +6,6 @@ a {
   text-decoration: none;
 }
 
-
-.navar {
-
-}
-
 .aviso {
   display: flex;
   align-items: center;
@@ -35,7 +30,7 @@ a {
     max-width: 1600px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: ;
+    margin-top: 10px;
   }
 }
 
