@@ -6,15 +6,19 @@ import './stylecomponentes.css';
 function ColorSchemesExample() {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+      <Navbar className='navbarFondo'  variant="dark">
+        
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="#home">NEWS + FEATURES</Nav.Link>
+            <Nav.Link href="#features">VIDEO</Nav.Link>
+            <Nav.Link href="#pricing">FILMS</Nav.Link>
+            <Nav.Link href="#pricing">SERIES</Nav.Link>
+            <Nav.Link href="#pricing">INTERACTIVE</Nav.Link>
+            <Nav.Link href="#pricing">COMMUNITY</Nav.Link>
+            <Nav.Link href="#pricing">DATABANK</Nav.Link>
+            <Nav.Link href="#pricing">DISNEY+</Nav.Link>
           </Nav>
-        </Container>
+        
       </Navbar>
       <br />
     </>
