@@ -97,8 +97,6 @@ button {
 p{
   color: #ffffff;
 }
-
-.me-auto{
-  background-color: #000000;
-  padding-left: 600px;
+#navbarboots{
+  padding-left: 300px;
 }

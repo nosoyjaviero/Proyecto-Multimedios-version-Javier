@@ -61,4 +61,9 @@
 .carousel-item {
   opacity: 0;
 }
+.end{
+  background-color: aliceblue;
+  height: 300px;
+  width: 100%;
+}
 

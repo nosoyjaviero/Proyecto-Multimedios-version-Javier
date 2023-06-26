@@ -5,9 +5,8 @@ import './stylecomponentes.css';
 
 function ColorSchemesExample() {
   return (
-    <>
-      <Navbar className='navbarFondo'  variant="dark">
-        
+    <Container className='container_navbar'>
+      <Navbar variant="dark" id='navbarboots'>
           <Nav className="me-auto">
             <Nav.Link href="#home">NEWS + FEATURES</Nav.Link>
             <Nav.Link href="#features">VIDEO</Nav.Link>
@@ -18,10 +17,9 @@ function ColorSchemesExample() {
             <Nav.Link href="#pricing">DATABANK</Nav.Link>
             <Nav.Link href="#pricing">DISNEY+</Nav.Link>
           </Nav>
-        
       </Navbar>
       <br />
-    </>
+    </Container>
   );
 }
 
