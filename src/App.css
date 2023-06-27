@@ -7,6 +7,12 @@
   text-align: center;
 }
 
+.background-page {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .carousel-content img {
   max-height: 685px;
 }

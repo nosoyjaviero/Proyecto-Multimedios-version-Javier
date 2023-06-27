@@ -16,7 +16,7 @@ import ProgressB from './Carousel/progress';
 import Carousel from 'react-bootstrap/Carousel';
 function App() {
   return (
-    <div className="App" style={{ backgroundImage: `url(${background})` }}>
+    <div className="App background-page" style={{ backgroundImage: `url(${background})` }}>
       <div className='navar'>
         <div className='iconos'>
           <Head></Head>
