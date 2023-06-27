@@ -1,6 +1,7 @@
 import './App.css';
 import ColorSchemesExample from './componentes navar/navar';
 import Head from './componentes navar/head';
+import Down_navbar from './down navbar/down_navabar';
 // estaticos
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css' // or less ideally
@@ -39,7 +40,7 @@ function App() {
          </div>
       </main>
       <div className='end'>
-        
+        <Down_navbar></Down_navbar>
       </div>
     </div>
   )

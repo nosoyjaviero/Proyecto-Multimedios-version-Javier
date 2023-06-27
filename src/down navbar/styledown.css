@@ -1,0 +1,56 @@
+.containerDownnavbar {
+    height: 100%;
+}
+.custom-row-down1 {
+    height: 50%;
+    align-items: center;
+    padding: 0px;
+    background-color: black;
+}
+.custom-col1-down1 {
+    height: 50%;
+    padding-top: 55px;
+}
+.more-From {
+    background-color: #000000;
+    color: aliceblue;
+}
+.down-icons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #000000;
+}
+.icons{
+    padding-right: 35px;
+}
+
+.custom-row-down2 {
+    height: 50%;
+    align-items: center;
+    padding: 0px;
+    background-color: black;
+}
+.TM{
+    color: white;
+    padding-top: 40px;
+}
+.navbar-tm{
+    height: 50px;
+    width: 1400px;
+}
+.navbar {
+    list-style: none;
+    display:  flex;
+}
+.navbar li {
+    border-right: 1px solid white;
+    padding: 0 10px;
+}
+#ultimo{
+    border-right: none;
+}
+.navbar li a {
+    font-size: 12px; /* Tamaño de fuente deseado */
+    color: white;
+}
