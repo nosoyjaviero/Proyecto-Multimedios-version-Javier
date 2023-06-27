@@ -81,8 +81,7 @@ button {
 }
 .signIn{
   display: flex;
-  padding-top: 22px;
-  padding-left: 50px;
+  padding-top: 25px;
 }
 .imagen{
   height: 80px;
@@ -99,4 +98,7 @@ p{
 }
 #navbarboots{
   padding-left: 300px;
+}
+.me-2{
+  height: 30px;
 }
