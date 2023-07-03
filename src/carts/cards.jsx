@@ -56,7 +56,7 @@ function CardsComponent() {
             </div>
             <div className="slider-container">
                 <div className='slider'>
-                    <Slider additionalTransfrom={10} responsive={responsive}>
+                    <Slider additionalTransfrom={30} responsive={responsive}>
                         {planets.map((planet, index) => (
                             <div key={index}>
                                 <Card bg='dark' border='primary' text='white' style={{textAlign:'left', width: '18rem', maxHeight:'488px' }}>

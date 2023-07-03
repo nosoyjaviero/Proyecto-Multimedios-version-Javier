@@ -67,6 +67,38 @@
   background-color: darkgray;
   margin-top: 30px;
 }
+.news{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  background-color: darkgray;
+  border: 5px solid greenyellow;
+}
+.video{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  background-color: darkgray;
+  border: 5px solid greenyellow;
+}
+.explore-more{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  background-color: darkgray;
+  border: 5px solid greenyellow;
+}
+.box_slider{
+  border: 5px solid rgb(255, 47, 47);
+  width: 86%;
+  height: 450px;
+}
 .end{
   background-color: aliceblue;
   height: 300px;

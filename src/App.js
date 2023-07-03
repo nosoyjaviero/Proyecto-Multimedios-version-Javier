@@ -3,6 +3,7 @@ import ColorSchemesExample from './componentes navar/navar';
 import Head from './componentes navar/head';
 import Down_navbar from './down navbar/down_navabar';
 import CardsComponent from './carts/cards';
+import SliderComponent from './carts/slider'
 // estaticos
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css' // or less ideally
@@ -40,7 +41,23 @@ function App() {
           <div className="cartas">
             <CardsComponent></CardsComponent>
           </div>
+          <div className="news">
+            <div className='box_slider'>
+              <SliderComponent></SliderComponent>
+            </div>
+          </div>
+          <div className="video">
+            <div className='box_slider'>
+
+            </div>
+          </div>
+          <div className="explore-more">
+            <div className='box_slider'>
+
+            </div>
+          </div>
         </div>
+
       </main>
       <div className='end'>
         <Down_navbar></Down_navbar>
