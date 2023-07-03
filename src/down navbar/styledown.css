@@ -37,7 +37,7 @@
 }
 .navbar-tm{
     height: 50px;
-    width: 1400px;
+    width: 100%;
 }
 .navbar {
     list-style: none;
@@ -51,6 +51,6 @@
     border-right: none;
 }
 .navbar li a {
-    font-size: 12px; /* Tamaño de fuente deseado */
+    font-size: 10px; /* Tamaño de fuente deseado */
     color: white;
 }

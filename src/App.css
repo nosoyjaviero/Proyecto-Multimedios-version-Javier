@@ -24,7 +24,6 @@
     max-width: 1600px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 10px;
   }
 }
 
@@ -62,9 +61,18 @@
 .carousel-item {
   opacity: 0;
 }
+.cartas{
+  height: 850px;
+  width: 100%;
+  background-color: darkgray;
+  margin-top: 30px;
+}
 .end{
   background-color: aliceblue;
   height: 300px;
   width: 100%;
 }
-
+.texto_navar{
+  height: 56px;
+  box-shadow: 1px 1px 2px whitesmoke;
+}

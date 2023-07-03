@@ -2,6 +2,7 @@ import './App.css';
 import ColorSchemesExample from './componentes navar/navar';
 import Head from './componentes navar/head';
 import Down_navbar from './down navbar/down_navabar';
+import CardsComponent from './carts/cards';
 // estaticos
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css' // or less ideally
@@ -27,17 +28,19 @@ function App() {
       </div>
       <main className='Carousel'>
         <div className='carousel-content contenedor'>
-         <div className='aviso center'> 
-         <a href='#' > <h6>ALL OF YOUR STAR WARS FAVORITES NOW STREAMING ON DISNEY*</h6></a>
+          <div className='aviso center'>
+            <a href='#' > <h6>ALL OF YOUR STAR WARS FAVORITES NOW STREAMING ON DISNEY</h6></a>
 
 
-         </div>
+          </div>
 
-         <div> 
-         <ControlledCarousel></ControlledCarousel>
+          <div>
+            <ControlledCarousel></ControlledCarousel>
+          </div>
+          <div className="cartas">
+            <CardsComponent></CardsComponent>
+          </div>
         </div>
-
-         </div>
       </main>
       <div className='end'>
         <Down_navbar></Down_navbar>

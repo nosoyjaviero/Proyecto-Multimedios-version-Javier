@@ -1,0 +1,26 @@
+.contanier{
+    width: 100%;
+    height: 100%;
+    border: 5px lawngreen solid;
+}
+.slider-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.slider-container .slider{
+    height: 600px;
+    width: 90%;
+}
+.HASOKA{
+    height: 30px;
+    width: 30px;
+
+    border: 5px lawngreen solid;
+}
+.react-multi-carousel-track{
+    height: 600px;
+    align-items: center;
+}
