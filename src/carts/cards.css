@@ -29,44 +29,11 @@
     height: 100%;
     width: 439px;
 }
-.imagen{
+.HASOKAIMG{
     height: 35%;
     width: 100%;
 }
-p{
-    --utility-font-family: InspireTWDC, Helvetica, sans-serif;
-    --utility-font-weight: normal;
-    --utility-font-style: normal;
-    --globalchrome-font-family: InspireTWDC, Helvetica, sans-serif;
-    --globalchrome-font-weight: normal;
-    --globalchrome-font-style: normal;
-    --sansserif-font-family: var(--utility-font-family);
-    --sansserif-font-weight: var(--utility-font-weight);
-    --sansserif-font-style: var(--utility-font-style);
-    --globalfooter-font-family: InspireTWDC, AvenirNext, Matterhorn, InspireTWDC, Helvetica, sans-serif;
-    --globalfooter-font-weight: 400;
-    --globalfooter-font-style: normal;
-    --header-font-family: DINNext, Matterhorn, Helvetica, sans-serif;
-    --header-font-weight: 500;
-    --header-font-style: normal;
-    --body-font-family: DINNext, Matterhorn, Helvetica, sans-serif;
-    --body-font-weight: 500;
-    --body-font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: none;
-    list-style: none;
-    pointer-events: none;
-    user-select: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    color: white;
-    font-family: "DINNext";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
-}
+
 .boton{
     height: 48px;
     width: 210px;

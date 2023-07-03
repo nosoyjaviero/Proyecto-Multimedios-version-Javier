@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Carousel from "react-multi-carousel";
+import Slider from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ListGroup from 'react-bootstrap/ListGroup';
 import Card from 'react-bootstrap/Card';
@@ -48,7 +48,7 @@ function CardsComponent() {
             <div className='HASOKA'>
                 <div className='content'>
                     <div className='details'>
-                        <img className='imagen' src="https://lumiere-a.akamaihd.net/v1/images/ahsoka-logo-desktop_d671a444.png?region=0,0,800,250" alt="" />
+                        <img className='HASOKAIMG' src="https://lumiere-a.akamaihd.net/v1/images/ahsoka-logo-desktop_d671a444.png?region=0,0,800,250" alt="" />
                         <p>Ahsoka Tano investigates an emerging threat to the galaxy. Original series streaming August 23, only on Disney+.&nbsp;</p>
                         <button className='boton'>EXPLORE</button>
                     </div>
@@ -56,7 +56,7 @@ function CardsComponent() {
             </div>
             <div className="slider-container">
                 <div className='slider'>
-                    <Carousel additionalTransfrom={10} responsive={responsive}>
+                    <Slider additionalTransfrom={10} responsive={responsive}>
                         {planets.map((planet, index) => (
                             <div key={index}>
                                 <Card bg='dark' border='primary' text='white' style={{textAlign:'left', width: '18rem', maxHeight:'488px' }}>
@@ -75,7 +75,7 @@ function CardsComponent() {
                                 </Card>
                             </div>
                         ))}
-                    </Carousel>
+                    </Slider>
                 </div>
             </div>
         </div>
