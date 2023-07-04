@@ -1,6 +1,26 @@
+/* html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+} */
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
 .body{
   
   background-image: url('/src/media/background.jpeg');
+}
+
+
+main {
+  padding: 0;
 }
 
 .App {
@@ -12,9 +32,17 @@
   background-attachment: fixed;
   background-size: cover;
 }
+.contenedor{
+  padding: 0px ;
+}
+
+.carousel-content{
+  padding: 0;
+}
 
 .carousel-content img {
   max-height: 685px;
+  
 }
 
 @media (min-width: 768px) {
@@ -22,20 +50,18 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1600px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
-.carusel-cuadro {
+/* .carusel-cuadro {
   height: 30px;
   width: 30px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
+} */
 
-.carousel-indicators [data-bs-target] {
+/* .carousel-indicators [data-bs-target] {
   position: relative;
   width: 60px;
   height: 6px;
@@ -51,7 +77,7 @@
   height: 100%;
   background: #7952b3;
   border-radius: inherit;
-}
+} */
 
 .carousel-item.active {
   opacity: 1;
@@ -61,6 +87,9 @@
 .carousel-item {
   opacity: 0;
 }
+
+
+
 .cartas{
   height: 850px;
   width: 100%;
@@ -75,4 +104,5 @@
 .texto_navar{
   height: 56px;
   box-shadow: 1px 1px 2px whitesmoke;
+  
 }

@@ -1,20 +1,15 @@
-import './App.css';
+import React from 'react';
 import ColorSchemesExample from './componentes navar/navar';
 import Head from './componentes navar/head';
 import Down_navbar from './down navbar/down_navabar';
 import CardsComponent from './carts/cards';
-// estaticos
+import 'bootstrap/dist/css/bootstrap.min.css'; // or less ideally
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css' // or less ideally
 import background from "./media/background.jpeg";
-
-// archivos
 import ControlledCarousel from './Carousel/Carousel';
 import ProgressB from './Carousel/progress';
-
-// bootstrap
-// import { Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
+
 function App() {
   return (
     <div className="App background-page" style={{ backgroundImage: `url(${background})` }}>
@@ -26,27 +21,28 @@ function App() {
           <ColorSchemesExample></ColorSchemesExample>
         </div>
       </div>
-      <main className='Carousel'>
-        <div className='carousel-content contenedor'>
-          <div className='aviso center'>
-            <a href='#' > <h6>ALL OF YOUR STAR WARS FAVORITES NOW STREAMING ON DISNEY</h6></a>
 
-
+      <main className='main contenedor' style={{ backgroundColor:'#000000'}}>
+        <div className='carousel-content' style={{ backgroundColor: '#0a0b0b', paddingTop: '25px' }}>
+          <div className="aviso center" style={{ textDecoration: 'none' }}>
+            <a href='#'><h6>ALL OF YOUR STAR WARS FAVORITES NOW STREAMING ON DISNEY</h6></a>
           </div>
 
-          <div>
+          <div className='' style={{ width:'100%' }}>
             <ControlledCarousel></ControlledCarousel>
           </div>
-          <div className="cartas">
-            <CardsComponent></CardsComponent>
-          </div>
+        </div>
+
+        <div className="cartas">
+          <CardsComponent></CardsComponent>
         </div>
       </main>
+
       <div className='end'>
         <Down_navbar></Down_navbar>
       </div>
     </div>
-  )
+  );
 }
 
 export default App;
