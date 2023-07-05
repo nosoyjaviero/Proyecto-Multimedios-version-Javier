@@ -106,3 +106,21 @@ main {
   box-shadow: 1px 1px 2px whitesmoke;
   
 }
+
+.modal-content{
+  background-color: #181818;
+  padding: 20px 40px 40px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.modal-body{
+  
+  height:288px ;
+  width: 460px;
+}
+
+modal-footer{
+  border: none;
+}
