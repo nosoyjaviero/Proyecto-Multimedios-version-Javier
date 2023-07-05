@@ -125,9 +125,11 @@ function Head() {
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-body">
+                                    <button type="button" class="btn " data-bs-dismiss="modal">X</button>
                                         <div className='modal-images modal-item'>
                                             <div className='modal-image'>
                                                 <img src={signImage} width="100%" height="100%" />
+                                                
                                             </div>
                                             <div className='modal-image'>
 
@@ -143,12 +145,9 @@ function Head() {
                                             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder='Email Address'></input>
                                         </div>
 
-                                        <button type='submit' className='btn btn-primary modal-item'>Continue</button>
-
-
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn " data-bs-dismiss="modal">X</button>
-                                    </div>
+                                        <button type='submit' className='btn btn-primary modal-item'>Continue</button>                                      
+                                       
+                                   
                                     </div>
                                     
                                 </div>
