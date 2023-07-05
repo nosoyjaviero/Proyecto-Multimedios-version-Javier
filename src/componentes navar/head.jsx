@@ -145,7 +145,7 @@ function Head() {
                                             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder='Email Address'></input>
                                         </div>
 
-                                        <button type='submit' className='btn btn-primary modal-item'>Continue</button>                                      
+                                        <button type='submit' className='btn btn-secondary modal-item'>Continue</button>                                      
                                        
                                    
                                     </div>
