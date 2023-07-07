@@ -11,9 +11,11 @@ import ControlledCarousel from './Carousel/Carousel';
 import './App.css';
 
 
-import ProgressB from './Carousel/progress';
 
-import Carousel from 'react-bootstrap/Carousel';
+import {
+  BrowserRouter as Router, Switch, Route, Link
+
+} from "react-router-dom";
 
 function App() {
   return (
@@ -26,22 +28,48 @@ function App() {
           <ColorSchemesExample></ColorSchemesExample>
         </div>
       </div>
+      <Router>
 
-      <main className='main contenedor' style={{ backgroundColor:'#000000'}}>
-        <div className='carousel-content' style={{ backgroundColor: '#0a0b0b', paddingTop: '25px' }}>
-          <div className="aviso center" style={{ textDecoration: 'none' }}>
-            <a href='#'><h6>ALL OF YOUR STAR WARS FAVORITES NOW STREAMING ON DISNEY</h6></a>
-          </div>
+        <Switch>
 
-          <div className='' style={{ width:'100%' }}>
-            <ControlledCarousel></ControlledCarousel>
-          </div>
-        </div>
+          <main className='main contenedor' style={{ backgroundColor: '#000000' }}>
+            <Route path="/" exact>
+              <div className='carousel-content' style={{ backgroundColor: '#0a0b0b' }}>
+                <div className="aviso center" style={{ textDecoration: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50px' }}>
+                  <Link to="/" className="white-link">
+                    ALL OF YOUR STAR WARS FAVORITES NOW STREAMING ON DISNEY
+                  </Link>
+                </div>
 
-        <div className="cartas">
-          <CardsComponent></CardsComponent>
-        </div>
-      </main>
+                <div className='' style={{ width: '100%' }}>
+                  <ControlledCarousel></ControlledCarousel>
+                </div>
+              </div>
+
+              <div className="cartas" style={{ backgroundColor: '#0a0b0b', paddingTop: '25px' }}>
+                <CardsComponent></CardsComponent>
+              </div>
+            </Route>
+
+            <Route path="/contacto">
+
+              {/* Iserta funcionalidad adicional starling aqui y cambiar nombre de ruta*/}
+
+
+            </Route>
+
+          </main>
+
+
+
+
+
+        </Switch>
+
+
+
+
+      </Router>
 
       <div className='end'>
         <Down_navbar></Down_navbar>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-import ProgressB from './progress';
+// import ProgressB from './progress';
 
 const carouselItems = [
   {
@@ -14,26 +14,26 @@ const carouselItems = [
     id: 2,
     duration: 5000,
     image: require('./media/carrousel2.jpg'),
-    title: 'Second slide label',
+    title:  'Etiqueta de la segunda diapositiva',
   },
   {
     id: 3,
     duration: 5000,
     image: require('./media/carrousel3.jpg'),
-    title: 'Third slide label',
+    title: 'Etiqueta de la tercera diapositiva',
   },
 ];
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
+  const handleCaruselCuadroClick = (slideIndex) => {
+    setIndex(slideIndex);
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      {carouselItems.map((item) => (
+    <Carousel activeIndex={index} onSelect={setIndex}>
+      {carouselItems.map((item, slideIndex) => (
         <Carousel.Item key={item.id}>
           <img className="d-block w-100" src={item.image} alt={`Slide ${item.id}`} />
 
@@ -47,11 +47,13 @@ function ControlledCarousel() {
                     backgroundImage: `url(${item.image})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    margin: idx === 0 ? '0' : '0 10px', // Aplica el margen de 10px solo a partir del segundo elemento
+                    margin: idx === 0 ? '0' : '0 10px',
+                    cursor: 'pointer',
                   }}
+                  onClick={() => handleCaruselCuadroClick(slideIndex)}
                 >
                   <div className="custom-div">
-                    <h5>{item.title}</h5>
+                    <h6>{item.title}</h6>
                   </div>
                 </div>
               ))}
@@ -64,6 +66,7 @@ function ControlledCarousel() {
 }
 
 export default ControlledCarousel;
+
 
 
 
