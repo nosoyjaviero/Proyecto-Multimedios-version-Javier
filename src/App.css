@@ -1,5 +1,35 @@
-.body{
-  
+/* html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+} */
+
+
+
+@font-face {
+  font-family: 'StarWars';
+  src: url('../src/static/starwars-tipografia.ttf') format('woff2');
+}
+
+body {
+  font-family: 'StarWars', sans-serif;
+}
+
+
+main {
+  padding: 0;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.body{  
   background-image: url('/src/media/background.jpeg');
 }
 
@@ -7,14 +37,27 @@
   text-align: center;
 }
 
+
+.white-link {
+  color: white;
+}
+
 .background-page {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+.contenedor{
+  padding: 0px ;
+}
+
+.carousel-content{
+  padding: 0;
+}
 
 .carousel-content img {
   max-height: 685px;
+  
 }
 
 @media (min-width: 768px) {
@@ -22,17 +65,22 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1600px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
 .carusel-cuadro {
-  height: 30px;
-  width: 30px;
+ 
+  height: 80px ;
+  width: 142px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.custom-div {
+  width: 126px;
+  height: 62px;
+  margin: 5%;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -61,6 +109,9 @@
 .carousel-item {
   opacity: 0;
 }
+
+
+
 .cartas{
   height: 850px;
   width: 100%;
@@ -107,4 +158,23 @@
 .texto_navar{
   height: 56px;
   box-shadow: 1px 1px 2px whitesmoke;
+  
+}
+
+.modal-content{
+  background-color: #181818;
+  padding: 20px 40px 40px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.modal-body{
+  
+  height:288px ;
+  width: 460px;
+}
+
+modal-footer{
+  border: none;
 }

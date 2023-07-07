@@ -6,6 +6,10 @@ import Button from 'react-bootstrap/Button';
 import Overlay from 'react-bootstrap/Overlay';
 import Form from 'react-bootstrap/Form';
 import './stylecomponentes.css';
+
+import signImage from "../media/signin-image.png";
+
+
 function Head() {
     const [show, setShow] = useState(false);
     const target = useRef(null);
@@ -65,7 +69,15 @@ function Head() {
                     </div>
                 </Col>
                 <Col className="custom-col" xl={3} >
+
+
+
                     <div className='buscador'>
+
+
+
+
+
                         <Button variant="danger" ref={target} onClick={() => setShow(!show)} style={{ paddingTop: '25px', display: 'flex', background: 'transparent', border: 'none' }}>
                             <svg xmlns="http://www.w3.org/2000/svg" id='lupa' class="icon icon-tabler icon-tabler-search" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -73,7 +85,11 @@ function Head() {
                                 <path d="M21 21l-6 -6" />
                             </svg>
                             <p>SEARCH</p>
+
+
+
                         </Button>
+
                         <Overlay target={target.current} show={show} placement="left">
                             {({ placement, arrowProps, show: _show, popper, ...props }) => (
                                 <div
@@ -97,14 +113,58 @@ function Head() {
                                 </div>
                             )}
                         </Overlay>
-                        <button className='signIn'>
+
+                        <button type="button" className="btn signIn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <svg xmlns="http://www.w3.org/2000/svg" id='people' class="icon icon-tabler icon-tabler-user" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                            </svg>
+                        </button>
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                    <button type="button" class="btn " data-bs-dismiss="modal">X</button>
+                                        <div className='modal-images modal-item'>
+                                            <div className='modal-image'>
+                                                <img src={signImage} width="100%" height="100%" />
+                                                
+                                            </div>
+                                            <div className='modal-image'>
+
+                                            </div>
+                                        </div>
+
+                                        <div className='modal-title modal-item'>
+                                            <h3 style={{ color: '#edd708' }}>ENTER YOUR EMAIL ADDRESS</h3>
+                                        </div>
+
+
+                                        <div className='modal-text modal-item'>
+                                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder='Email Address'></input>
+                                        </div>
+
+                                        <button type='submit' className='btn btn-secondary modal-item'>Continue</button>                                      
+                                       
+                                   
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        {/* <button className='signIn'>
                             <svg xmlns="http://www.w3.org/2000/svg" id='people' class="icon icon-tabler icon-tabler-user" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
                                 <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
                             </svg>
                             <p>SIGN IN</p>
-                        </button>
+                        </button> */}
+
+
                     </div>
                 </Col>
             </Row>
