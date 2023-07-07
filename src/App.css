@@ -53,13 +53,20 @@ main {
   }
 }
 
-/* .carusel-cuadro {
-  height: 30px;
-  width: 30px;
+.carusel-cuadro {
+ 
+  height: 80px ;
+  width: 142px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-} */
+}
+
+.custom-div {
+  width: 126px;
+  height: 62px;
+  margin: 5%;
+}
 
 /* .carousel-indicators [data-bs-target] {
   position: relative;

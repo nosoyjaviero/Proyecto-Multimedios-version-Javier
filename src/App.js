@@ -4,10 +4,15 @@ import Head from './componentes navar/head';
 import Down_navbar from './down navbar/down_navabar';
 import CardsComponent from './carts/cards';
 import 'bootstrap/dist/css/bootstrap.min.css'; // or less ideally
-import './App.css';
+
 import background from "./media/background.jpeg";
 import ControlledCarousel from './Carousel/Carousel';
+
+import './App.css';
+
+
 import ProgressB from './Carousel/progress';
+
 import Carousel from 'react-bootstrap/Carousel';
 
 function App() {
