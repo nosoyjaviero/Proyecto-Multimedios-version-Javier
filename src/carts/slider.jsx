@@ -10,11 +10,9 @@ function SliderComponent() {
 
     const fetchPlanetData = async () => {
         try {
-            const response = await fetch('https://swapi.dev/api/planets/');
+            const response = await fetch('https://swapi.dev/api/planets/?page=2');
             const data = await response.json();
-            // Eliminar el planeta "Tatooine" de la lista
-            const filteredPlanets = data.results.filter((planet) => planet.name !== "Tatooine");
-            setPlanets(filteredPlanets);
+            setPlanets(data.results);
         } catch (error) {
             console.log(error);
         }
@@ -47,7 +45,25 @@ function SliderComponent() {
         <div className='contanier_slider'>
             <div className="slider_cont">
                 <div className='slider_down'>
-                    
+                    <div className='slider_noti'>
+                        <Slider additionalTransfrom={30} responsive={responsive}>
+                            {planets.map((planet, index) => (
+                                <div key={index}>
+                                    <Card bg='dark' border='primary' text='white' style={{ textAlign: 'left', width: '18rem', maxHeight: '488px' }}>
+                                        <Card.Img variant="top" src={`https://starwars-visualguide.com/assets/img/planets/${index + 11}.jpg`} />
+                                        <Card.Body>
+                                            <Card.Title>{planet.name}</Card.Title>
+                                            <ListGroup bsPrefix='dark' style={{ textAlign: 'left', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }} className="list-group-flush">
+                                                <ListGroup.Item>Clima: {planet.climate}</ListGroup.Item>
+                                                <ListGroup.Item>Gravedad: {planet.gravity}</ListGroup.Item>
+                                                <ListGroup.Item>Terreno: {planet.terrain}</ListGroup.Item>
+                                            </ListGroup>
+                                        </Card.Body>
+                                    </Card>
+                                </div>
+                            ))}
+                        </Slider>
+                    </div>
                 </div>
             </div>
         </div>

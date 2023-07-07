@@ -43,17 +43,20 @@ function App() {
           </div>
           <div className="news">
             <div className='box_slider'>
+            <h4 id='cuandro-texto'>Lastest News +Features</h4>
               <SliderComponent></SliderComponent>
             </div>
           </div>
           <div className="video">
             <div className='box_slider'>
-
+            <h4 id='cuandro-texto'>Lastest Video</h4>
+            <SliderComponent></SliderComponent>
             </div>
           </div>
           <div className="explore-more">
             <div className='box_slider'>
-
+              <h4 id='cuandro-texto'>Explore More</h4>
+            <SliderComponent></SliderComponent>
             </div>
           </div>
         </div>

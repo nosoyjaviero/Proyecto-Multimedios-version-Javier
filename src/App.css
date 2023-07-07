@@ -73,29 +73,29 @@
   justify-content: center;
   height: 500px;
   width: 100%;
-  background-color: darkgray;
-  border: 5px solid greenyellow;
+  background-color: black;
 }
 .video{
+  padding-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 500px;
   width: 100%;
-  background-color: darkgray;
-  border: 5px solid greenyellow;
+  background-color: black;
 }
 .explore-more{
+  padding-top: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 500px;
   width: 100%;
-  background-color: darkgray;
-  border: 5px solid greenyellow;
+  background-color: black;
 }
 .box_slider{
-  border: 5px solid rgb(255, 47, 47);
+  color: aliceblue;
+  text-align: left;
   width: 86%;
   height: 450px;
 }
