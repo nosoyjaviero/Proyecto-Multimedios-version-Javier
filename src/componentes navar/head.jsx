@@ -19,7 +19,7 @@ function Head() {
                 <Col className="custom-col" id='icons' xl={3} >
                     <div className='prueba'>
                         <div>
-                            <a id='facebook' href='https://es-la.facebook.com/StarWars/' target="_blank>
+                            <a id='facebook' href='https://es-la.facebook.com/StarWars/' target="_blank">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="icon icon-tabler icon-tabler-brand-facebook"
