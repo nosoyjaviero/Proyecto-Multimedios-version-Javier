@@ -19,7 +19,7 @@ function Head() {
                 <Col className="custom-col" id='icons' xl={3} >
                     <div className='prueba'>
                         <div>
-                            <button id='facebook'>
+                            <a id='facebook' href='https://es-la.facebook.com/StarWars/' target="_blank>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="icon icon-tabler icon-tabler-brand-facebook"
@@ -35,22 +35,22 @@ function Head() {
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
                                 </svg>
-                            </button>
-                            <button id='instagram'>
+                            </a>
+                            <a id='instagram' href='https://www.instagram.com/starwars/?hl=es'>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
                                     <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                                     <path d="M16.5 7.5l0 .01" />
                                 </svg>
-                            </button>
-                            <button id='youTube'>
+                            </a>
+                            <a id='youTube' href='https://www.youtube.com/user/starwars'>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
                                     <path d="M10 9l5 3l-5 3z" />
                                 </svg>
-                            </button>
+                            </a>
                             <button id='twitter'>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="#ffffff" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -65,7 +65,12 @@ function Head() {
                 </Col>
                 <Col className="custom-col" xl={6} >
                     <div className='letras'>
+                        <a href='/'>
                         <img className='imagen' src="https://lumiere-a.akamaihd.net/v1/images/sw_logo_stacked_2x-52b4f6d33087_7ef430af.png?region=0,0,586,254" />
+                    
+
+                        </a>
+                        
                     </div>
                 </Col>
                 <Col className="custom-col" xl={3} >
@@ -124,12 +129,12 @@ function Head() {
                         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    <div class="modal-body">
-                                    <button type="button" class="btn " data-bs-dismiss="modal">X</button>
+                                    <div class="modal-body d-grid gap-1">
+                                        <button type="button" class="btn " data-bs-dismiss="modal">X</button>
                                         <div className='modal-images modal-item'>
                                             <div className='modal-image'>
                                                 <img src={signImage} width="100%" height="100%" />
-                                                
+
                                             </div>
                                             <div className='modal-image'>
 
@@ -141,17 +146,19 @@ function Head() {
                                         </div>
 
 
-                                        <div className='modal-text modal-item'>
+                                        <div className='modal-text modal-item p-2'>
                                             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder='Email Address'></input>
                                         </div>
+                                        <div className='p-2'>
+                                            <button type='submit' className='btn btn-secondary modal-item'>Continue</button>
+                                        </div>
 
-                                        <button type='submit' className='btn btn-secondary modal-item'>Continue</button>                                      
-                                       
-                                   
+
+
                                     </div>
-                                    
+
                                 </div>
-                                
+
                             </div>
                         </div>
 

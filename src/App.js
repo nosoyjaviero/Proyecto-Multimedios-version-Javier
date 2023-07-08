@@ -50,29 +50,33 @@ function App() {
               <div className="cartas" style={{ backgroundColor: '#0a0b0b', paddingTop: '25px' }}>
                 <CardsComponent></CardsComponent>
               </div>
-          <div className="news">
-            <div className='box_slider'>
-            <h4 id='cuandro-texto'>Lastest News +Features</h4>
-              <SliderComponent></SliderComponent>
-            </div>
-          </div>
-          <div className="video">
-            <div className='box_slider'>
-            <h4 id='cuandro-texto'>Lastest Video</h4>
-            <SliderComponent></SliderComponent>
-            </div>
-          </div>
-          <div className="explore-more">
-            <div className='box_slider'>
-              <h4 id='cuandro-texto'>Explore More</h4>
-            <SliderComponent></SliderComponent>
-            </div>
-          </div>
+              <div className="news">
+                <div className='box_slider'>
+                  <h4 id='cuandro-texto'>Lastest News +Features</h4>
+                  <Link to="/planeta"><p>Mas contenido</p>  </Link>
+                  <SliderComponent></SliderComponent>
+                </div>
+              </div>
+              <div className="video">
+                <div className='box_slider'>
+                  <SliderComponent></SliderComponent>
+                </div>
+              </div>
+              <div className="explore-more">
+                <div className='box_slider'>
+                  <h4 id='cuandro-texto'>Explore More</h4>
+                  <SliderComponent></SliderComponent>
+                </div>
+              </div>
             </Route>
 
-            <Route path="/contacto">
+            <Route path="/planeta">
 
-              {/* Iserta funcionalidad adicional starling aqui y cambiar nombre de ruta*/}
+              <div className="explore-more">
+                <div className='box_slider'>
+                  <SliderComponent></SliderComponent>
+                </div>
+              </div>
 
 
             </Route>
